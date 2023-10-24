@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select E-Wallet</title>
+    <link rel="stylesheet" href="stylesmbanking.css">
+</head>
+<body>
+    <header>
+        <h1>E-Wallet</h1>
+    </header>
+
+    <main>
+        <form>
+        <div class="ewallet-selection">
+            <h2>Select an E-Wallet</h2>
+            <div class="button-container">
+                <a class="ewallet-button" href="transfer-gopay.html">GoPay</a>
+                <a class="ewallet-button" href="transfer-shopee.html">ShopeePay</a>
+                <a class="ewallet-button" href="transfer-ovo.html">OVO</a>
+                <!-- Add more e-wallet buttons as needed -->
+            </div>
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="navbar">
+            <ul>
+                <li><a href="mbanking homepage.html">Homepage</a></li>
+                <li><a href="mbanking transaction history.html">Transaction History</a></li>
+                <li><a href="mbanking qris.html">QRIS</a></li>
+                <li><a href="mbanking settings.html">Settings</a></li>
+                <li><a href="mbankingapplogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="mbanking.js">
+        function selectEwallet(ewallet) {
+            // Handle the selection, e.g., redirect to the selected e-wallet's transfer page.
+            window.location.href = 'transfer-' + ewallet.toLowerCase() + '.html';
+        }
+    </script>
+</body>
+</html>

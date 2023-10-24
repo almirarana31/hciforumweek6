@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesmbanking.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <!-- Profile content -->
+    <main>
+        <section class="user-details">
+            <div id="userInfo">
+                <p><strong>Name:</strong> <span id="name">John Doe</span></p>
+                <p><strong>Email:</strong> <span id="email">john.doe@example.com</span></p>
+                <p><strong>Phone:</strong> <span id="phone">(123) 456-7890</span></p>
+                <p><strong>Avatar:</strong> <span id="avatar">No file selected</span></p><br>
+                <button id="editButton">Edit Profile</button>
+            </div>
+        </section>
+
+        <section class="edit-profile hidden">
+            <h2>Edit Profile</h2>
+            <form id="profileForm" enctype="multipart/form-data">
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" name="userName" required>
+
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required>
+
+                <label for="userPhone">Phone:</label>
+                <input type="tel" id="userPhone" name="userPhone" required>
+
+                <!-- ... Other HTML elements ... -->
+
+                <label for="userAvatar">Avatar:</label>
+                <input type="file" id="userAvatar" name="userAvatar" accept="image/*">
+                <img id="avatarPreview" src="" alt="Avatar Preview" style="max-width: 100%; display: none;">
+                <button type="submit">Save Changes</button>
+
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Back to Home link -->
+
+    <footer>
+        <div class="navbar">
+            <ul>
+                <li><a href="mbanking homepage.html">Homepage</a></li>
+                <li><a href="mbanking transaction history.html">Transaction History</a></li>
+                <li><a href="mbanking qris.html">QRIS</a></li>
+                <li><a href="mbanking settings.html">Settings</a></li>
+                <li><a href="mbankingapplogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="mbanking.js">
+    </script>
+</body>
+</html>

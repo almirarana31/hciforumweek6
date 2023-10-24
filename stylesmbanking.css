@@ -1,0 +1,712 @@
+/* Styles for the E-Wallet Selection page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 50%;
+  padding: 16px;
+  background-color: white;
+  margin:auto;
+  margin-top: 100px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+  button.reset-password, button.login-different-account {
+  background-color: transparent;
+  border: none;
+  color:#007BFF;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  }
+
+header {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* E-Wallet selection styles */
+main {
+  text-align: center;
+  margin: 20px;
+}
+
+.ewallet-selection h2{
+  margin-bottom: 30px;
+  color: #007BFF;
+  background-color: #fff;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ewallet-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.ewallet-button:hover {
+  background-color: #0058A5;
+}
+
+h2 {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.setting {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.setting h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="password"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Styles for the Confirm Transaction page */
+.confirm-transaction {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.confirm-transaction h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style forms and form elements */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* Styles for the QR Code Scanner page */
+/* Style the QR code scanner section */
+.qr-scanner {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.qr-scanner h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#scanner {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Styles for the Action Confirmation page */
+/* Style the Action Confirmation section */
+.action-confirmation {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.action-confirmation h2 {
+  color:#007BFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+/* Style action buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.repeat-button,
+.return-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repeat-button {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.return-button {
+  flex: 1;
+}
+
+/* Styles for the User Profile page */
+/* Style the User Profile section */
+.user-profile {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.user-profile h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style the user details */
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007BFF;
+}
+
+.user-info {
+  flex: 2;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.user-info p {
+  margin-bottom: 10px;
+}
+
+/* Styles for the Action Confirmation page */
+/* Style the Action Confirmation section */
+.action-confirmation {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.action-confirmation h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style action buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.repeat-button,
+.return-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repeat-button {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.return-button {
+  flex: 1;
+}
+
+/* Styles for the Bills page */
+/* Style the Bill form */
+.bill-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bill-form h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bill-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bill-form input[type="text"],
+.bill-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.bill-form button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Style the Bill List */
+.bill-list {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bill-list h2 {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+}
+
+#billList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#billList li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#billList li:last-child {
+  border-bottom: none;
+}
+
+.user-details {
+  margin-bottom: 30px;
+}
+
+/* Styles for the Edit Profile section (initially hidden) */
+.edit-profile {
+  display: none;
+}
+
+h2 {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+/* Hide and show elements */
+.hidden {
+  display: none;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 90%;
+  height: 100%;
+}
+
+
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0056b3;
+  color: #0056b3;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 999; /* Ensure it appears above all other elements */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.request-funds {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.request-funds h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.converter {
+  margin: 20px;
+  text-align: center;
+}
+
+.converter label, .converter select {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.converter button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+select[id="themeSelect"] {
+  display: block;
+  margin-bottom: 5%;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 70%;
+  height: 90%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.transaction-list {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list h2 {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+}
+
+#transactionList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#transactionList li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#transactionList li:last-child {
+  border-bottom: none;
+}
+
+i {
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #F5F5F4;
+
+}
+
+.dark-mode header, .navbar {
+  background-color: #F5F5F4;
+  color:#333333;
+}
+
+.dark-mode button {
+  background-color: #F5F5F4;
+  color:#333333;
+}
+
+.dark-mode i {
+  color:#333333;
+}
+
+.dark-mode a {
+  color:#333333;
+  text-decoration: none;
+}
+
+.dark-mode form {
+  color:#333333;
+}
+
+.dark-mode button[type="submit"] {
+  background-color: #333;
+  color:#F5F5F4;
+}
+
+.dark-mode h2 {
+  background-color: #333;
+  color:#F5F5F4;
+}
+
+.dark-mode .action-confirmation h2 {
+  background-color: #fff;
+  color:#333;
+}
+
+.dark-mode .repeat-button {
+  background-color: #333;
+  color:#F5F5F4;
+  text-align: center;
+}
+
+.dark-mode .return-button {
+  background-color: #333;
+  color:#F5F5F4;
+}
+
+.dark-mode ul[id="billList"] {
+  color:#333333;
+}
+
+.dark-mode th {
+  background-color: #333;
+  color: #F5F5F4;
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #F5F5F4;
+  color: #333333;
+}
+
+.dark-mode tr:nth-child(odd) {
+  background-color: #fff;
+  color: #333333;
+}
+
+.dark-mode .ewallet-selection h2 {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode .ewallet-button {
+  background-color: #333;
+  color: #F5F5F4;
+}
+
+.dark-mode ul[id="transactionList"] {
+  color: #333;
+}

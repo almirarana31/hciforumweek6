@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Rates</title>
+    <link rel="stylesheet" href="stylesmbanking.css">
+</head>
+<body>
+    <header>
+    <h1>Currency Converter</h1>
+    </header>
+    <table>
+        <tr>
+            <th>Currency</th>
+            <th>Exchange Rate (to USD)</th>
+        </tr>
+        <tr>
+            <td>USD (United States Dollar)</td>
+            <td>1.00</td>
+        </tr>
+        <tr>
+            <td>EUR (Euro)</td>
+            <td>0.85</td>
+        </tr>
+        <tr>
+            <td>GBP (British Pound)</td>
+            <td>0.74</td>
+        </tr>
+        <tr>
+            <td>JPY (Japanese Yen)</td>
+            <td>111.04</td>
+        </tr>
+        <tr>
+            <td>AUD (Australian Dollar)</td>
+            <td>1.33</td>
+        </tr>
+        <tr>
+            <td>CAD (Canadian Dollar)</td>
+            <td>1.27</td>
+        </tr>
+        <tr>
+            <td>CNY (Chinese Yuan)</td>
+            <td>6.47</td>
+        </tr>
+        <tr>
+            <td>INR (Indian Rupee)</td>
+            <td>74.45</td>
+        </tr>
+        <tr>
+            <td>IDR (Indonesian Rupiah)</td>
+            <td>14484.20</td>
+        </tr>
+        <!-- Add more currencies and exchange rates as needed -->
+    </table>
+
+    <div class="converter">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <label for="fromCurrency">From Currency:</label>
+        <select id="fromCurrency">
+            <option value="USD">USD (United States Dollar)</option>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="GBP">GBP (British Pound)</option>
+            <option value="JPY">JPY (Japanese Yen)</option>
+            <option value="AUD">AUD (Australian Dollar)</option>
+            <option value="CAD">CAD (Canadian Dollar)</option>
+            <option value="CNY">CNY (Chinese Yuan)</option>
+            <option value="INR">INR (Indian Rupee)</option>
+            <option value="IDR">IDR (Indonesian Rupiah)</option>
+            <!-- Add options for other currencies -->
+        </select>
+        <label for="toCurrency">To Currency:</label>
+        <select id="toCurrency">
+            <option value="USD">USD (United States Dollar)</option>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="GBP">GBP (British Pound)</option>
+            <option value="JPY">JPY (Japanese Yen)</option>
+            <option value="AUD">AUD (Australian Dollar)</option>
+            <option value="CAD">CAD (Canadian Dollar)</option>
+            <option value="CNY">CNY (Chinese Yuan)</option>
+            <option value="INR">INR (Indian Rupee)</option>
+            <option value="IDR">IDR (Indonesian Rupiah)</option>
+            <!-- Add options for other currencies -->
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <br>
+    <footer>
+        <div class="navbar">
+            <ul>
+                <li><a href="mbanking homepage.html">Homepage</a></li>
+                <li><a href="mbanking transaction history.html">Transaction History</a></li>
+                <li><a href="mbanking qris.html">QRIS</a></li>
+                <li><a href="mbanking settings.html">Settings</a></li>
+                <li><a href="mbankingapplogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="mbanking.js"></script>
+</body>
+</html>

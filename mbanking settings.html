@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="stylesmbanking.css">
+</head>
+<body>
+    <header>
+        <h1>Settings</h1>
+    </header>
+    <main>
+        <section class="setting">
+            <h2>Notification Preferences</h2>
+            <form id="notificationPreferencesForm">
+                <label for="emailNotifications">Email Notifications:</label>
+                <input type="checkbox" id="emailNotifications" name="emailNotifications">
+
+                <label for="smsNotifications">SMS Notifications:</label>
+                <input type="checkbox" id="smsNotifications" name="smsNotifications">
+
+                <button type="submit">Save Preferences</button>
+            </form>
+        </section>
+
+        <section class="setting">
+            <h2>Themes</h2>
+            <form id="themePreferencesForm">
+                <p>Click the button to toggle between dark and light mode for this page.</p>
+                <br>
+                <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                <button onclick="toggleLightMode()">Toggle Light Mode</button>
+                <button onclick="toggleLightMode()">Toggle Pink Mode</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="navbar">
+            <ul>
+                <li><a href="mbanking homepage.html">Homepage</a></li>
+                <li><a href="mbanking transaction history.html">Transaction History</a></li>
+                <li><a href="mbanking qris.html">QRIS</a></li>
+                <li><a href="mbanking settings.html">Settings</a></li>
+                <li><a href="mbankingapplogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="mbanking.js"></script>
+</body>
+</html>

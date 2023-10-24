@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallet Transfers</title>
+    <link rel="stylesheet" href="stylesmbanking.css">
+</head>
+<body>
+    <header>
+        <h1>E-Wallet Transfers</h1>
+    </header>
+    <main>
+        <section class="ewallet">
+            <h2>Transfer to ShopeePay</h2>
+            <form id="shopeeTransferForm" method="POST" action="mbanking pin otp ewallet.html">
+                <label for="recipient">Recipient's ShopeePay Account:</label>
+                <input type="text" id="shopeeRecipient" name="recipient" required>
+                <label for="amount">Amount:</label>
+                <input type="number" id="shopeeAmount" name="amount" required>
+                <button type="submit">Transfer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="navbar">
+            <ul>
+                <li><a href="mbanking homepage.html">Homepage</a></li>
+                <li><a href="mbanking transaction history.html">Transaction History</a></li>
+                <li><a href="mbanking qris.html">QRIS</a></li>
+                <li><a href="mbanking settings.html">Settings</a></li>
+                <li><a href="mbankingapplogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="mbanking.js"></script>
+</body>
+</html>

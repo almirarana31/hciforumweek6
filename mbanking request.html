@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Funds</title>
+    <link rel="stylesheet" href="stylesmbanking.css">
+</head>
+<body>
+    <header>
+        <h1>Request Funds</h1>
+    </header>
+
+    <!-- Request funds content -->
+    <main>
+        <section class="request-funds">
+            <h2>Request Money</h2>
+            <form method="POST" action="mbanking request prompt.html" id="requestFundsForm">
+                <label for="recipientName">User's Account:</label>
+                <input type="number" id="recipientName" name="recipientName" required>
+
+                <label for="amount">Amount to Request:</label>
+                <input type="number" min="0" id="amount" name="amount" required>
+
+                <label for="reason">Note (optional):</label>
+                <input type="text" id="note" name="note">
+
+                <button type="submit">Request Funds</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="navbar">
+            <ul>
+                <li><a href="mbanking homepage.html">Homepage</a></li>
+                <li><a href="mbanking transaction history.html">Transaction History</a></li>
+                <li><a href="mbanking qris.html">QRIS</a></li>
+                <li><a href="mbanking settings.html">Settings</a></li>
+                <li><a href="mbankingapplogin.html">Logout</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="mbanking.js"></script>
+</body>
+</html>
