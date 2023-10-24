@@ -135,27 +135,28 @@ function getExchangeRate(currency) {
   }
 }
 
-  // Function to save the font size preference to local storage
-  function saveFontSizePreference(fontSize) {
-    localStorage.setItem('fontSizePreference', fontSize);
-  }
+// JavaScript code in mbanking.js
 
-  // Function to load the font size preference from local storage
-  function loadFontSizePreference() {
-    const fontSizePreference = localStorage.getItem('fontSizePreference');
-    if (fontSizePreference) {
-      const body = document.body;
-      body.style.fontSize = fontSizePreference + 'px';
-    }
-  }
-
-  // Listen for changes to the font size selection
-  const fontSizeSelect = document.getElementById('fontSizeSelect');
-  fontSizeSelect.addEventListener('change', function () {
+// Function to change font size and save the preference
+function changeFontSize() {
+    const fontSizeSelect = document.getElementById('fontSize');
     const selectedFontSize = fontSizeSelect.value;
-    changeFontSize(selectedFontSize);
-    saveFontSizePreference(selectedFontSize);
-  });
 
-  // Load the font size preference when the page loads
-  window.addEventListener('load', loadFontSizePreference);
+    document.body.style.fontSize = selectedFontSize;
+
+    // Save the font size preference to local storage
+    localStorage.setItem('fontSizePreference', selectedFontSize);
+}
+
+// Apply saved font size preference on page load
+window.onload = function () {
+    const savedFontSize = localStorage.getItem('fontSizePreference');
+    if (savedFontSize) {
+        document.body.style.fontSize = savedFontSize;
+    }
+};
+
+// Event listener for the "Save Preferences" button
+const saveFontSizeButton = document.getElementById('saveFontSizePreference');
+saveFontSizeButton.addEventListener('click', changeFontSize);
+
