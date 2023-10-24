@@ -314,6 +314,10 @@ input[type="text"] {
   margin-bottom: 10px;
 }
 
+p {
+  font-size: large;
+}
+
 /* Styles for the Action Confirmation page */
 /* Style the Action Confirmation section */
 .action-confirmation {
