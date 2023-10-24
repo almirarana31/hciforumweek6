@@ -15,7 +15,7 @@ function toggleLightMode() {
 
 function togglePinkMode() {
   const body = document.body;
-  body.classList.toggle("light-mode", true);
+  body.classList.toggle("pink-mode", true);
   body.classList.remove("dark-mode");
   body.classList.remove("light-mode");
   saveModePreference("pink-mode");
@@ -134,3 +134,28 @@ function getExchangeRate(currency) {
       default: return 1.00; // Default to 1 for unknown currencies
   }
 }
+
+  // Function to save the font size preference to local storage
+  function saveFontSizePreference(fontSize) {
+    localStorage.setItem('fontSizePreference', fontSize);
+  }
+
+  // Function to load the font size preference from local storage
+  function loadFontSizePreference() {
+    const fontSizePreference = localStorage.getItem('fontSizePreference');
+    if (fontSizePreference) {
+      const body = document.body;
+      body.style.fontSize = fontSizePreference + 'px';
+    }
+  }
+
+  // Listen for changes to the font size selection
+  const fontSizeSelect = document.getElementById('fontSizeSelect');
+  fontSizeSelect.addEventListener('change', function () {
+    const selectedFontSize = fontSizeSelect.value;
+    changeFontSize(selectedFontSize);
+    saveFontSizePreference(selectedFontSize);
+  });
+
+  // Load the font size preference when the page loads
+  window.addEventListener('load', loadFontSizePreference);

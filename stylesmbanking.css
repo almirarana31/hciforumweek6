@@ -15,6 +15,7 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
+  font-size: medium;
 }
 
 .login-container {
@@ -504,11 +505,14 @@ footer {
   left: 0;
   width: 100%;
   background-color: #0056b3;
-  color: #0056b3;
-  text-decoration: none;
   padding: 10px 0;
   text-align: center;
-  z-index: 999; /* Ensure it appears above all other elements */
+  z-index: 999; 
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar ul {
@@ -623,13 +627,26 @@ i {
   color: #fff;
 }
 
+#fontSizeSelect {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
 .dark-mode {
   background-color: #333333;
   color: #F5F5F4;
 
 }
 
-.dark-mode header, .navbar {
+.dark-mode header {
+  background-color: #F5F5F4;
+  color:#333333;
+}
+
+.dark-mode .navbar {
   background-color: #F5F5F4;
   color:#333333;
 }
@@ -709,4 +726,99 @@ i {
 
 .dark-mode ul[id="transactionList"] {
   color: #333;
+}
+
+
+.pink-mode {
+  background-color: #ffa3a3;
+  color: #ffd3e7;
+
+}
+
+.pink-mode header {
+  background-color: #ffd3e7;
+  color:#ffa3a3;
+}
+
+.pink-mode .navbar {
+  background-color: #ffd3e7;
+  color:#ffa3a3;
+}
+
+
+.pink-mode button {
+  background-color: #ffd3e7;
+  color:#ffa3a3;
+}
+
+.pink-mode i {
+  color:#ffa3a3;
+}
+
+.pink-mode a {
+  color:#ffa3a3;
+  text-decoration: none;
+}
+
+.pink-mode form {
+  color:#ffa3a3;
+}
+
+.pink-mode button[type="submit"] {
+  background-color: #ffa3a3;
+  color:#ffd3e7;
+}
+
+.pink-mode h2 {
+  background-color: #ffa3a3;
+  color:#ffd3e7;
+}
+
+.pink-mode .action-confirmation h2 {
+  background-color: #ffd3e7;
+  color:#ffa3a3;
+}
+
+.pink-mode .repeat-button {
+  background-color: #ffa3a3;
+  color:#ffd3e7;
+  text-align: center;
+}
+
+.pink-mode .return-button {
+  background-color: #ffa3a3;
+  color:#ffd3e7;
+}
+
+.pink-mode ul[id="billList"] {
+  color:#ffa3a3;
+}
+
+.pink-mode th {
+  background-color: #ffa3a3;
+  color: #ffd3e7;
+}
+
+.pink-mode tr:nth-child(even) {
+  background-color: #ffd3e7;
+  color: #ffa3a3;
+}
+
+.pink-mode tr:nth-child(odd) {
+  background-color: #ffd3e7;
+  color: #ffa3a3;
+}
+
+.pink-mode .ewallet-selection h2 {
+  background-color: #ffd3e7;
+  color: #ffa3a3;
+}
+
+.pink-mode .ewallet-button {
+  background-color: #ffa3a3;
+  color: #ffd3e7;
+}
+
+.pink-mode ul[id="transactionList"] {
+  color: #ffa3a3;
 }
