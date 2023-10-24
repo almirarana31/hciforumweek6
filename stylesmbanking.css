@@ -1,4 +1,3 @@
-/* Styles for the E-Wallet Selection page */
 * {
   margin: 0;
   padding: 0;
@@ -80,7 +79,6 @@ header {
   width: 100%;
 }
 
-/* E-Wallet selection styles */
 main {
   text-align: center;
   margin: 20px;
@@ -164,7 +162,6 @@ input[type="checkbox"] {
   border-radius: 5px;
 }
 
-/* Styles for the Confirm Transaction page */
 .confirm-transaction {
   margin-bottom: 30px;
   background-color: #fff;
@@ -178,7 +175,6 @@ input[type="checkbox"] {
   margin-bottom: 10px;
 }
 
-/* Style forms and form elements */
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -205,8 +201,7 @@ input[type="text"] {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-/* Styles for the QR Code Scanner page */
-/* Style the QR code scanner section */
+
 .qr-scanner {
   margin-bottom: 30px;
   background-color: #fff;
@@ -226,8 +221,6 @@ input[type="text"] {
   margin: 0 auto;
 }
 
-/* Styles for the Action Confirmation page */
-/* Style the Action Confirmation section */
 .action-confirmation {
   margin-bottom: 30px;
   background-color: #fff;
@@ -243,7 +236,6 @@ input[type="text"] {
   background-color: #fff;
 }
 
-/* Style action buttons */
 .action-buttons {
   display: flex;
   justify-content: space-between;
@@ -270,8 +262,6 @@ input[type="text"] {
   flex: 1;
 }
 
-/* Styles for the User Profile page */
-/* Style the User Profile section */
 .user-profile {
   margin-bottom: 30px;
   background-color: #fff;
@@ -285,7 +275,6 @@ input[type="text"] {
   margin-bottom: 10px;
 }
 
-/* Style the user details */
 .user-details {
   display: flex;
   align-items: center;
@@ -318,8 +307,6 @@ p {
   font-size: large;
 }
 
-/* Styles for the Action Confirmation page */
-/* Style the Action Confirmation section */
 .action-confirmation {
   margin-bottom: 30px;
   background-color: #fff;
@@ -333,7 +320,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* Style action buttons */
 .action-buttons {
   display: flex;
   justify-content: space-between;
@@ -360,8 +346,6 @@ p {
   flex: 1;
 }
 
-/* Styles for the Bills page */
-/* Style the Bill form */
 .bill-form {
   max-width: 400px;
   margin: 0 auto;
@@ -402,7 +386,6 @@ p {
   font-weight: bold;
 }
 
-/* Style the Bill List */
 .bill-list {
   max-width: 400px;
   margin: 20px auto;
@@ -437,7 +420,6 @@ p {
   margin-bottom: 30px;
 }
 
-/* Styles for the Edit Profile section (initially hidden) */
 .edit-profile {
   display: none;
 }
@@ -462,7 +444,6 @@ input[type="file"] {
 
 
 
-/* Hide and show elements */
 .hidden {
   display: none;
 }
